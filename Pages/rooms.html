@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/rooms.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo"><i class="fas fa-star-half"></i><h3 >HOTEL <span class="color1">STAY</span>INN</h3></div>
+        
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booking.html">Reservation</a></li>
+        </ul>
+
+        <a href="contact.html" class="action_btn">Contact Us</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="drop_down ">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="booking.html">Reservation</a></li>
+        <li><a href="contact.html" class="action_btn">Contact Us</a></li>
+    </div>
+
+    <h1>HOTEL <span class="color1">STAY</span>INN </h1>
+    <div class="div">
+        <div class="left">
+            <img src="../images/rooms/rooms.jpg" alt="HOTEL STAY INN"><br>
+            <p>Welcome to hotel StayInn cbe</p>
+            <a href="../Pages/booking.html">Book your rooms now..!</a> <br><br>
+        `   <p>Hotel Grand Palace is centrally located in Coimbatore city. Few minutes walk from the central bus station, Gandhipuram 2kms from Railway station and just 9 Kms from the Coimbatore Airport. Exquisite & Elegantly furnished AC, Single, Double and Trible beded Delux rooms are available.</p>
+    
+        <div class="div1">
+            <h3>Standard (Non A/C)</h3>
+            <ul>
+                <li>Single Occupancy Rs. 1300.00 +TAX</li>
+                <li>Double Occupancy Rs. 1600.00 +TAX</li>
+                <li>Trible Occupancy Rs. 2000.00 +TAX</li>  
+                <h3>Extra Person Rs. 300.00 +taxes</h3>          
+            </ul>
+        
+            <h3>Air conditioned (A/C)</h3>
+            <ul>
+                <li>Single Occupancy Rs. 1800.00 +TAX</li>
+                <li>Double Occupancy Rs. 2100.00 +TAX</li>
+                <li>Trible Occupancy Rs. 2500.00 +TAX</li>
+                <h3>Extra Person Rs. 350.00 +taxes</h3>
+            </ul>
+
+        <div class="term">
+            <h3>TERMS :</h3>
+            <ul>
+                <li>*&nbsp; Rates with effective from 01 th SEPTEMBER 2022.</li>
+                <li>*&nbsp; Taxes as applicable shall be extra.</li>
+                <li>*&nbsp; Tariff and Taxes are subject to change without notice.</li>
+                <li>*&nbsp; Check-in & Check-out 24 hours.</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="div2">
+        <h2>FACILITIES :</h2>
+        <ul>
+            <li>*&emsp;24 hours hot water</li>
+            <li>*&emsp;Ample car parking</li>
+            <li>*&emsp;Travel desk and Laundry</li>
+            <li>*&emsp;24 hours room service</li>
+            <li>*&emsp;Leading satellite channels</li>
+            <li>*&emsp;Free wifi ready</li>
+            <li>*&emsp;Reasonably priced</li>
+            <li>*&emsp;A 24-hour front desk</li>
+            <li>*&emsp;Daily housekeeping</li>
+            <li>*&emsp;Private bathroom</li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+<script>
+
+    const toggle_btn=document.querySelector('.toggle_btn')
+    const toggle_btn1=document.querySelector('.toggle_btn i')
+    const dropDown =document.querySelector('.drop_down')
+
+    toggle_btn.onclick=function(){
+        dropDown.classList.toggle('open')
+        const isOpen=dropDown.classList.contains("open")
+        toggle_btn1.classList=isOpen
+        ?'fa-solid fa-xmark':'fa-solid fa-bars'
+    }
+
+</script>
+
+</body>
+
+<footer>
+    <div class="contact">
+        <h3>HOTEL <span class="color1">STAY</span> INN</h3>
+        <div class="foot">
+            <div class="c1">
+                <i class='	fas fa-map-marker-alt'></i>
+                <p>Cross cut road, 11th street, Gandhipuram, Tatabad, </p>
+                <p>Coimbatore 641012. Tamil Nadu, India.</p>
+                <ul >
+                <i class='fas fa-phone-alt'></i>
+                <p class="color1">&emsp;Book now</p>
+                <p class="color1">&nbsp;9786534201</p>
+            </ul>
+
+            <div class="icons">
+                <i class='fab fa-facebook'></i>
+                <i class='fab fa-instagram'></i>
+                <i class='fab fa-telegram-plane'></i>
+                <i class='fab fa-twitter'></i>
+            </div>
+
+            <div class="copy">
+                <br>
+                <p>&copy;2023 copyrights</p>
+            </div>
+            </div>
+
+            <div class="c2">
+                <h4 >Coimbatore Attractions</h4><br>
+                <div class="card1">
+                    <img  src="../images/home/maruthamalai.jpg" alt="">
+                    <div class="container1">
+                        <p>Maruthamalai_Temple</p> 
+                        <p class="color1">Maruthamalai</p> 
+                    </div>
+                </div>
+
+            <div class="card1">
+                <img  src="../images/home/monkey_falls.webp" alt=""><br><br>
+                <div class="container1">
+                    <p>Monkey_falls</p> 
+                    <p class="color1">Valparai</p> 
+                </div>
+            </div>
+
+            <div class="card1">
+                <img  src="../images/home/isha.jpg" alt="">
+                <div class="container1">
+                    <p>Dhynalinga</p> 
+                    <p class="color1">Esha</p> 
+                </div>
+            </div>
+            </div>
+
+
+        <div class="c3">
+            <h4>Stay Inn Gallery</h4><br>
+            <div class="grid-container">
+                <div><img  src="../images//home/galery_img1.jfif" alt=""></div>
+                <div><img  src="../images/home/gallery_img2.jpg" alt=""></div>
+                <div><img  src="../images/home/galery_img3.jfif" alt=""></div>
+                <div><img  src="../images/home/gallery_img4.webp" alt=""></div>
+                <div><img  src="../images/home/galery_img5.webp" alt=""></div>
+                <div><img  src="../images/home/galery_img6.webp" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</html>

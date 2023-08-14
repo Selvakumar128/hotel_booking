@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    color: #fff;
+    background-image: url("https://c1.wallpaperflare.com/preview/484/302/445/room-armchair-lamp-evening.jpg");
+    background-attachment: fixed;  
+  }
+
+  h1, h2 ,h3,h4,h5,h6,span,p, li ,a{
+    font-family: 'Poppins', sans-serif;
+  }
+
+.color1 {
+    color: #589442;
+  }
+
+  /* table */
+  table {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #4effca;
+  }
+
+  /* hr {
+    background-color: #FF7200;
+    border: 2px solid #FF7200;
+    margin-top: 0%;
+  } */
+
+
+  /* form */
+.form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border:3px solid #4effca;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    /* background:#757070c7    */
+}
+
+.form h1 {
+  text-align: center;
+}
+
+.formInput {
+  display: block;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.formInput label {
+  width: 180px;
+  float:left ;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.formInput select, input,textarea {
+  padding: 10px 32px;
+  width: 200px;
+  border-radius: 20px;
+  align-items: center;
+  /* margin-right: 36px; */
+  appearance: none;
+}
+
+.formInput textarea {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 25%;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #589442;
+    transition: 1.3s ease;
+  }
+
+
+
+  /* Media Queries */
+@media (min-width: 500px){
+    .form{
+        margin: 50px auto;
+        padding: 30px 0;
+        position: relative;
+        display: flex;
+    }
+}

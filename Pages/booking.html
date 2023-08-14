@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../Styles/booking.css">
+</head>
+
+<body>
+    <div class="img"></div>
+
+    <div class="form">
+
+    <form id="dataform">
+
+        <h1 >HOTEL <span class="color1">STAY</span>INN</h1>
+        <div class="formInput">
+            <label>Name</label>
+            <input type="Name" id="name" placeholder="Name" minlength="3" required>
+        </div>
+
+        <div class="formInput">
+            <label>Phone</label> 
+            <input type="text" id="number" pattern="[0-9]{10}" placeholder="Mobile Number" minlength="10" maxlength="10" required>
+        </div>
+
+        <div class="formInput">
+            <label>Email </label>
+            <input type="email" id="email" placeholder="Enter Email" minlength="10" required>
+        </div>
+
+        <div class="formInput">
+            <label>From </label> <input type="date" id="fromDate" required>
+            </div>
+        <div class="formInput">
+            <label>To </label>
+            <input type="date" id="toDate" required>
+        </div>
+
+        <div class="formInput">
+            <label>Room Type </label>
+            <select id="roomType" required>
+                <option>Single Room</option>
+                <option>Double Room</option>
+                <option>Triple Room</option>
+            </select>
+        </div>
+
+        <div class="formInput">
+            <label>Room Requirement</label>
+            <select id="requirements" required>
+                <option>A/C</option>
+                <option>Non A/C</option>
+            </select>
+        </div>
+
+        <div class="formInput">
+            <label>Adults </label>
+            <select id="adult" required>
+                <option>--</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="formInput">
+            <label>Children </label>
+            <select id="children" required>
+                <option>--</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+
+        <div class="formInput">
+            <label> Special Requirements </label>
+            <textarea id="splReq" placeholder="special Requirements"></textarea>
+        </div>
+
+        <input class="submit" type="submit" value="Submit" >
+
+    </form>
+</div>
+
+    <div class="table">
+        <table border=".5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number</th>
+                    <th>Email</th>
+                    <th>From Date</th>
+                    <th>TO Date</th>
+                    <th>Room Type</th>
+                    <th>Requirements</th>
+                    <th>Adult</th>
+                    <th>Children</th>
+                    <th>Spl Requirements</th>
+                </tr>
+        </thead>
+        <tbody id="body"></tbody>
+        </table>
+    </div>
+
+    <script src="../javascript/booking.js"></script>
+</body>
+</html>
